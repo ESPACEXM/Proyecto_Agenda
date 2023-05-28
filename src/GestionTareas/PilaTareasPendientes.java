@@ -1,4 +1,4 @@
-package proyectotaskorganizer;
+package GestionTareas;
 
 /**
  * Clase que contiene los métodos de la pila de tareas pendientes

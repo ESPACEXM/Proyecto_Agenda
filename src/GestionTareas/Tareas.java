@@ -1,4 +1,4 @@
-package proyectotaskorganizer;
+package GestionTareas;
 
 import java.sql.Date;
 
