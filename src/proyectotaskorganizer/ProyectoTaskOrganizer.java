@@ -6,15 +6,18 @@ package proyectotaskorganizer;
 
 /**
  *
- * @author elian
+ * @author Datos en Escabeche
  */
+
 public class ProyectoTaskOrganizer {
+
+    public static Object tasks;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
