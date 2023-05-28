@@ -62,5 +62,14 @@ public class ColaTareasPendientes {
     public int numTareas() {
         return numElementos;
     }
+
+    //Método que imprime la cola de tareas pendientes
+    public void mostrarColaTareasPendientes() {
+        for (int i = 0; i < numTareas(); i++) {
+            Tarea tarea = (Tarea) colaTareasPendientes[i];
+            System.out.println(tarea.getNombreTarea() + " " + tarea.getDescripcionTarea() + " " + tarea.getEstadoTarea() + " " + tarea.getPrioridadTarea() + " " + tarea.getId());
+            System.out.println("");
+        }
+    }
     
 }

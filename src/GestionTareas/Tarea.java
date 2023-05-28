@@ -1,28 +1,27 @@
 package GestionTareas;
 
-import java.sql.Date;
 
 /**
  * Clase que contiene la información de las tareas
  */
 
-public class Tareas {
+public class Tarea {
 
     //Atributos
     private String nombreTarea;
     private String descripcionTarea;
-    private Date fechaInicioTarea;
     private String estadoTarea;
     private int prioridadTarea;
+    private int id;
 
 
     //Constructor
-    public Tareas(String nombreTarea, String descripcionTarea, Date fechaInicioTarea, String estadoTarea, int prioridadTarea) {
+    public Tarea(String nombreTarea, String descripcionTarea, String estadoTarea, int prioridadTarea, int id) {
         this.nombreTarea = nombreTarea;
         this.descripcionTarea = descripcionTarea;
-        this.fechaInicioTarea = fechaInicioTarea;
         this.estadoTarea = estadoTarea;
         this.prioridadTarea = prioridadTarea;
+        this.id = id;
     }
 
     //Getters y setters
@@ -42,14 +41,6 @@ public class Tareas {
         this.descripcionTarea = descripcionTarea;
     }
 
-    public Date getFechaInicioTarea() {
-        return fechaInicioTarea;
-    }
-
-    public void setFechaInicioTarea(Date fechaInicioTarea) {
-        this.fechaInicioTarea = fechaInicioTarea;
-    }
-
     public String getEstadoTarea() {
         return estadoTarea;
     }
@@ -64,6 +55,14 @@ public class Tareas {
 
     public void setPrioridadTarea(int prioridadTarea) {
         this.prioridadTarea = prioridadTarea;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }

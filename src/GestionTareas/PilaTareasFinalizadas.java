@@ -54,7 +54,8 @@ public class PilaTareasFinalizadas {
     //Método que muestra las tareas finalizadas
     public void mostrarTareasFinalizadas() {
         for (int i = 0; i <= numTareasFinalizadas(); i++) {
-            System.out.println(pilaTareasFinalizadas[i]);
+            Tarea tarea = (Tarea) pilaTareasFinalizadas[i];
+            System.out.println(tarea.getNombreTarea() + " " + tarea.getDescripcionTarea() + " " + tarea.getEstadoTarea() + " " + tarea.getPrioridadTarea() + " " + tarea.getId());
             System.out.println("");
         }
     }

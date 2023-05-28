@@ -54,7 +54,8 @@ public class PilaTareasPendientes {
     //Método que muestra las tareas pendientes
     public void mostrarTareasPendientes() {
         for (int i = 0; i <= numTareasPendientes(); i++) {
-            System.out.println(pilaTareasPendientes[i]);
+            Tarea tarea = (Tarea) pilaTareasPendientes[i];
+            System.out.println(tarea.getNombreTarea() + " " + tarea.getDescripcionTarea() + " " + tarea.getEstadoTarea() + " " + tarea.getPrioridadTarea() + " " + tarea.getId());
             System.out.println("");
         }
     }
