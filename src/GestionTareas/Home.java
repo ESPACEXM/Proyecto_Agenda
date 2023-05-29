@@ -20,7 +20,6 @@ public class Home {
 
         pilaTareasPendientes.push(tarea1);
         pilaTareasPendientes.push(tarea2);
-        pilaTareasPendientes.pop();
 
         pilaTareasPendientes.mostrarTareasPendientes();
     }
